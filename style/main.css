@@ -11,14 +11,20 @@
 
 body {
     background: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
+    color: rgb(238, 226, 226);
+}
+
+.container {
+    margin-left: 20px;
+    margin-right: 10px;
 }
 
 header .container {
-    display: flex;
-    flex-direction: row; /* funciona como um display: flex */
-    align-items: center;
-    justify-content: space-between;
+    display: flex; /* todos os elementos-filhos do container se organizam em linha */
+    flex-direction: row; /* distribuição do conteúdo em linha (horizontal) */
+    align-items: center; /* alinhamento centralizado */
+    justify-content: space-between; /* o navegador distribui o espaço entre e ao redor dos elementos-filhos ao longo do eixo principal do conteiner, que nesse caso é o eixo horizontal */
 }
 
 header .logo {
@@ -35,7 +41,63 @@ header nav a {
     margin-right: 10px;
 }
 
-header nav a:hover { /* udança de cor - quando o cursor passar pelo link  */
+header nav a:hover { /* mudança de cor - quando o cursor passar pelo link  */
     color: #fff;
 }
 
+/* capa */
+.capa {
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/img/capa.jpg') ;
+    height: 400px;
+    background-size: cover; /* cover pega o tamanho da área de cobertura da capa (400px) */
+    display: flex;
+    flex-direction: column; /* distribuição do conteúdo em linha (vertical) */
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.capa .container {
+    width: 70%;
+}
+
+.capa .descricao  {
+    margin-top: 3px;
+    margin-bottom: 40px;
+}
+
+.titulo-capa {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px 30px; /* vertical horizontal */
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 5px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block; /* o elemento (filme) é renderizado como bloco, tal como os parágrafos e os cabeçalhos. */
+}
+
+.carrossel-filmes {
+    margin-top: 8px;
+}
