@@ -48,7 +48,7 @@ header nav a:hover { /* mudança de cor - quando o cursor passar pelo link  */
 /* capa */
 .capa {
     font-size: 16px;
-    background-image: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('img/capa.jpg') ;
+    background-image: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('capa.jpg') ;
     height: 400px;
     background-size: cover; /* cover pega o tamanho da área de cobertura da capa (400px) */
     display: flex;
