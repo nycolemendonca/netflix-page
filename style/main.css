@@ -20,19 +20,19 @@ body {
     margin-right: 10px;
 }
 
+.container img {
+    display: flex;
+    height: 3rem;
+    margin-top: 1rem;
+    margin-left: 5px;
+    margin-bottom: 1rem;
+}
+
 header .container {
     display: flex; /* todos os elementos-filhos do container se organizam em linha */
     flex-direction: row; /* distribuição do conteúdo em linha (horizontal) */
     align-items: center; /* alinhamento centralizado */
     justify-content: space-between; /* o navegador distribui o espaço entre e ao redor dos elementos-filhos ao longo do eixo principal do conteiner, que nesse caso é o eixo horizontal */
-}
-
-header .logo {
-    margin-left: 5px;
-    color: var(--vermelho);
-    font-family: 'Arial Black', Times;
-    font-size: 40px;
-
 }
 
 header nav a {
